@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOMNER</title>
+    <link rel="stylesheet" href="0.topbar.css">
+    <link rel="stylesheet" href="8.aboutus.css">
+</head>
+<body>
+    <div class="topbar" style="position: fixed;">
+        <div class="left">
+            <img src="Images/Project Logo.png" alt="Logo">
+            <span><a href="9-landingpage.html">DOMNER</a></span>
+        </div>
+        <div class="right">
+            <div class="nav">
+                <a href="1-home.html">HOME</a>
+                <a href="6-favorite.html">FAVORITE</a>
+                <a href="7-contact.html">CONTACT</a>
+                <a href="" style="text-decoration: underline;">ABOUT</a>
+                <a href="2-login.html"><img src="Images/User Icon.png" alt="User"></a>
+            </div>
+        </div>
+        <img src="Images/Burger Icon.svg" alt="Icon" class="burger-btn" onclick=showSidebar()>
+    </div>
+
+    <!-- Continue from here -->
+    <div class="hero-container">
+        <h1>About Us</h1>
+    </div>
+
+    <div class="about-section">
+        
+        <div class="about-content-left">
+            <h2>About Us</h2>
+            <p><strong>Welcome to Domner – Your Journey Starts Here.</strong></p>
+            <p>Our platform is designed to help travelers quickly discover destinations that match their interests, whether they are looking for nature, culture, city experiences, or weekend getaways. We gather essential information from multiple reliable sources and present it in a clear, easy-to-explore format.</p>
+            <p>Domner aims to make travel planning simpler by offering popular destinations, detailed descriptions, photos, maps, and user-friendly filters such as region, type, and rating. Whether you're a local traveler exploring Cambodia or an international visitor discovering new places, our website serves as a helpful starting point for your next adventure. We believe that exploring the world should be accessible, informative, and enjoyable—and Domner is built to support exactly that.</p>
+        </div>
+
+        <div class="about-team-right">
+            <h2>Our Team</h2>
+            <div class="team-list">
+                
+                <div class="team-member">
+                    <div class="info-box">
+                        <h3>Kong Sothearith</h3>
+                        <p>Computer Science Department</p>
+                        <p>Specialize In Software Engineer</p>
+                    </div>
+                    <div class="icon-box">
+                        <img src="Images/Fire.png" alt="Flame">
+                    </div>
+                </div>
+
+                <div class="team-member reverse-layout">
+                    <div class="icon-box">
+                        <img src="Images/Fire.png" alt="Flame">
+                    </div>
+                    <div class="info-box">
+                        <h3>Porleak Vitou</h3>
+                        <p>Computer Science Department</p>
+                        <p>Specialize In Software Engineer</p>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="info-box">
+                        <h3>Kov Cheaching</h3>
+                        <p>Computer Science Department</p>
+                        <p>Specialize In Software Engineer</p>
+                    </div>
+                    <div class="icon-box">
+                        <img src="Images/Fire.png" alt="Flame">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.navsidebar');
+            sidebar.style.display = 'flex';
+        }
+        function hidesidebar() {
+            const sidebar = document.querySelector('.navsidebar');
+            sidebar.style.display = 'none';
+        }
+    </script>
+</body>
+</html>

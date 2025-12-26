@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOMNER</title>
+    <link rel="stylesheet" href="0.topbar.css">
+    <link rel="stylesheet" href="9.landingpage.css">
+</head>
+<body>
+    <div class="topbar" style="position: absolute; 
+    width: 100%;
+    z-index: 3;">
+        <div class="left">
+            <img src="Images/Project Logo.png" alt="Logo">
+            <span><a href="9-landingpage.html" style="color: white;">DOMNER</a></span>
+        </div>
+        <div class="right" style="margin-right: -20px;">
+            <div class="nav">
+                <a href="1-home.html">HOME</a>
+                <a href="6-favorite.html">FAVORITE</a>
+                <a href="7-contact.html">CONTACT</a>
+                <a href="8-aboutus.html">ABOUT</a>
+                <a href="2-login.html"><img src="Images/User Icon.png" alt="User"></a>
+            </div>
+        </div>
+        <img src="Images/Burger Icon.svg" alt="Icon" class="burger-btn" onclick=showSidebar()>
+    </div>
+
+    <!-- Continue from here -->
+     <div class="hero-section">
+        <div class="overlay"></div> 
+        <div class="content">
+            <h1>DOMNER</h1>
+            <h2>EXPLORE THE WORLD WITH A SMILE</h2>
+            <a href="1-home.html" class="cta-button">Get Started</a>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span>&#8595;</span>
+        </div>
+    </div>
+
+    <div class="section-container features-section">
+        <h2 class="section-title">Why Choose Domner?</h2>
+        <div class="divider"></div>
+        
+        <div class="features-grid">
+            
+            <div class="feature-card">
+                <img src="Images/Search.png" alt="Search" class="feature-icon"> 
+                <h3>Search Exploration</h3>
+                <p>Find your next adventure instantly using our smart search tools to explore regions and hidden spots.</p>
+            </div>
+
+            <div class="feature-card">
+                <img src="Images/Category.jpg" alt="Category" class="feature-icon"> 
+                <h3>Category Lists</h3>
+                <p>Browse destinations organized by interest: Nature, City Life, Culture, and Weekend Getaways.</p>
+            </div>
+
+            <div class="feature-card">
+                <img src="Images/Add-to-Fav.jpg" alt="Favorite" class="feature-icon"> 
+                <h3>Add to Favorite</h3>
+                <p>Build your bucket list. Save the places you love so you never lose track of a dream trip.</p>
+            </div>
+
+            <div class="feature-card">
+                <img src="Images/User Icon.png" alt="Account" class="feature-icon"> 
+                <h3>Login / Register</h3>
+                <p>Create an account to sync your saved trips, manage your profile, and access exclusive features.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section-container about-teaser">
+        <div class="about-content">
+            <h2>Making Travel Simple</h2>
+            <p>DOMNER was born from a simple idea: exploring shouldn't be complicated. We bridge the gap between travelers and the beautiful, unseen corners of our country.</p>
+            <p>Whether you are a local looking for a weekend getaway or a tourist seeking adventure, we are here to guide you.</p>
+            <br>
+            <a href="8-aboutus.html" class="secondary-btn">Read Our Story</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>DOMNER</h3>
+                <p>Your ultimate travel companion.</p>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <a href="1-home.html">Home</a>
+                <a href="8-aboutus.html">About Us</a>
+                <a href="7-contact.html">Contact</a>
+                <a href="2-login.html">Login</a> 
+            </div>
+
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+                <p>Email: domner@trip.com</p>
+                <p>Phone: +855 12 345 678</p>
+                <p>Phnom Penh, Cambodia</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 DOMNER. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.navsidebar');
+            sidebar.style.display = 'flex';
+        }
+        function hidesidebar() {
+            const sidebar = document.querySelector('.navsidebar');
+            sidebar.style.display = 'none';
+        }
+        const select = document.getElementById("whatever");
+        const link = document.getElementById("searchLink");
+
+        function updateLink() {
+            switch (select.value) {
+            case "Destination":
+                link.href = "4-search1.html";
+                break;
+            case "Country":
+                link.href = "4-search2.html";
+                break;
+            default:
+                link.href = "#";
+            }
+        }
+        updateLink();
+        select.addEventListener("change", updateLink);
+    </script>
+</body>
+</html>
